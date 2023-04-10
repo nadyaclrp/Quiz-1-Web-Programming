@@ -19,9 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function(){
     $productCard = [
-        ['productName' => 'Diamond', 'status' => 'S', 'price' => '1000'],
-        ['productName' => 'Weapon', 'status' => 'SR', 'price' => '1000'],
-        ['productName' => 'Knife', 'status' => 'SSR', 'price' => '1000'],
+        ['productName' => 'Diamond', 'status' => 'R', 'price' => 1000],
+        ['productName' => 'Weapon', 'status' => 'SR', 'price' => 2000],
+        ['productName' => 'Knife', 'status' => 'SSR', 'price' => 3000],
     ];
     return view('product',compact('productCard'));
 });

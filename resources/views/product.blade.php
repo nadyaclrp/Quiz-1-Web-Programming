@@ -12,7 +12,7 @@
                         <h1 class="card-title">{{$card['productName']}}</h1>
                         <p class="card-text">{{$card['status']}}</p>
                         <h1>{{$card['price']}}</h1>
-                        <a href="" class="btn btn-primary">Buy</a>
+                        <a href="/productDetail/{{$card['productName']}}" class="btn btn-primary">Buy</a>
                     </div>
                 </div>
                 @elseif ($card['status'] == 'SR')
@@ -21,7 +21,7 @@
                             <h1 class="card-title">{{$card['productName']}}</h1>
                             <p class="card-text">{{$card['status']}}</p>
                             <h1>{{$card['price']}}</h1>
-                            <a href="" class="btn btn-primary">Buy</a>
+                            <a href="/productDetail/{{$card['productName']}}" class="btn btn-primary">Buy</a>
                         </div>
                     </div>
                 @elseif ($card['status'] == 'SSR')
@@ -30,7 +30,7 @@
                             <h1 class="card-title">{{$card['productName']}}</h1>
                             <p class="card-text">{{$card['status']}}</p>
                             <h1>{{$card['price']}}</h1>
-                            <a href="" class="btn btn-primary">Buy</a>
+                            <a href="/productDetail/{{$card['productName']}}" class="btn btn-primary">Buy</a>
                         </div>
                     </div>
                 @endif

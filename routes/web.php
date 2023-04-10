@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('product');
-// });
+Route::get('/', function () {
+    return view('onlineShop');
+});
 
-Route::get('/', function(){
+Route::get('/product', function(){
     $productCard = [
         ['productName' => 'Diamond', 'status' => 'R', 'price' => 1000],
         ['productName' => 'Weapon', 'status' => 'SR', 'price' => 2000],
@@ -26,6 +26,6 @@ Route::get('/', function(){
     return view('product',compact('productCard'));
 });
 
-// Route::get('/', function () {
-//     return view('welcome');
+// Route::get('/product', function () {
+//     return view('product');
 // });
